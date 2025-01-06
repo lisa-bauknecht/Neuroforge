@@ -1,7 +1,7 @@
 price = 8
 discounts = [0, 1, 0.95, 0.9, 0.8, 0.75]
 
-#calculates the discount from different discount piles (total) from current splitting
+#calculates the discount from different discount groups (total) from current splitting
 def discount(basket):
     for i in range(len(basket)):
         basket[i] = basket[i] * discounts[basket[i]] * price
